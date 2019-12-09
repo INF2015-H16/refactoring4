@@ -18,11 +18,11 @@ public class Guests extends Users{
     String firstName;
     Date dateBirth;
 
-    public Guests(String n, String p, Date d) {
-        this.lastName = n;
-        this.firstName = p;
-        this.dateBirth = d;
-        this.guest_id = createGuestId(n, p, d);
+    public Guests(String ln, String fn, Date db) {
+        this.lastName = ln;
+        this.firstName = fn;
+        this.dateBirth = db;
+        this.guest_id = createGuestId(ln, fn, db);
     }
 
     public String createGuestId(String lName, String fName, Date date) {
